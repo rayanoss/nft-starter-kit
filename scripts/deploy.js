@@ -14,12 +14,12 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const ContractNFT = await hre.ethers.getContractFactory("Nerds");
-  const contractNFT = await ContractNFT.deploy("https://gateway.pinata.cloud/ipfs/QmTuceHxYy4uawmQf3tWoTFT72Yep1JoF1CzMuGp3BLbdv/hidden.json", "0x014a070128a59e606727aea9fc9911e1e7a959570378c3e781461e68f7c0ecc0", ["0x06b14f52c6880bE2a287003C02E6A1924290C33B"], [100]);
+  const Greeter = await hre.ethers.getContractFactory("Greeter");
+  const greeter = await Greeter.deploy("Hello, Hardhat!");
 
-  await contractNFT.deployed();
+  await greeter.deployed();
 
-  console.log("NFT deployed to:", contractNFT.address);
+  console.log("Greeter deployed to:", greeter.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
