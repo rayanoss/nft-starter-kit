@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/merkletreejs@latest/merkletree.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/keccak256@latest/keccak256.js"></script>
+    <script src="../scripts/merkletree.js"></script>
+    <title>Legendary Owl - Mint</title>
+</head>
+
+<body>
+    <nav class="nav_container">
+        <img src="./logo.png" alt="" class="nav_logo">
+        <button class="nav_button_connect" onclick="connectWallet()">CONNECT</button>
+    </nav>
+    <section class="container">
+        <div class="left_side_container">
+            <h1 class="title_minting">MINTING IS LIVE</h1>
+            <p>Don't waste your chance and try to get your Legendary Owl before the sale is over.</p>
+            <div class="user_input_container">
+                <button class="decrease_mint_value">-</button>
+                <input readonly="readonly" type="text" name="" id="" value="1" class="minting_counter">
+                <button class="increase_mint_value">+</button>
+            </div>
+            <button class="minting_button" onclick="mintNerds()">Mint</button>
+          
+        </div>
+        <div class="right_side_container">
+            <img src="./nft_preview.png" alt="">
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
